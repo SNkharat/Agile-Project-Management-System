@@ -21,8 +21,6 @@ class UserViewSet(viewsets.ModelViewSet):
             return [IsAdminUser()]
         return [IsAuthenticated()]
     
-
-
 class LogoutView(APIView):
     permission_classes = [IsAuthenticated]
 
